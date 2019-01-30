@@ -1,0 +1,35 @@
+ <html>
+ <body>
+  <form name="signup" onsubmit="return val()" action="/home/student/Desktop/signup.html">
+  <link rel="stylesheet" href="/home/student/Desktop/b.css">
+  <h2>Hurry Up! Exclusive offers on your brands!</h2>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br><br>
+  Gender &nbsp;&nbsp;&nbsp;
+  <input type="radio" name="gender" value="male" checked> Male &nbsp;&nbsp;&nbsp;
+  <input type="radio" name="gender" value="female"> Female<br><br>
+  New Username<br><input type="text" name="user"><br>
+  New Password<br><input type="text" name="user"><br>
+  
+ <br> 
+  <input type="Submit" value="Get Started">
+</body>
+</form> 
+<head>
+<script>
+function val()
+{
+	var fname = document.forms["signup"] ["firstname"].value;
+	var lname = document.forms["signup"] ["lastname"].value;
+	if(fname== " abc")
+	{
+		window.alert("Please enter your Name"); 
+     		name.focus(); 
+ 	        return false; 
+	}
+}
+</script>
+</head>
+</html>
